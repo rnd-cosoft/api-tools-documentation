@@ -16,9 +16,9 @@
     },
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-        "laminas-api-tools/api-tools-configuration": "^1.6",
-        "laminas-api-tools/api-tools-content-negotiation": "^1.8",
-        "laminas-api-tools/api-tools-provider": "^1.6",
+        "rnd-cosoft/api-tools-configuration": "^1.6",
+        "rnd-cosoft/api-tools-content-negotiation": "^1.8",
+        "rnd-cosoft/api-tools-provider": "^1.6",
         "laminas/laminas-inputfilter": "^2.13",
         "laminas/laminas-modulemanager": "^2.14",
         "laminas/laminas-mvc": "^3.3",
@@ -58,6 +58,9 @@
         "static-analysis": "psalm --shepherd --stats",
         "test": "phpunit --colors=always",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "replace": {
+        "laminas-api-tools/api-tools-documentation": "*"
     },
     "support": {
         "issues": "https://github.com/laminas-api-tools/api-tools-documentation/issues",
